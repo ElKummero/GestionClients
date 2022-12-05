@@ -1,4 +1,5 @@
-<template> <!-- TODO Placer dans dossier components/ -->
+<template> <!-- TODO Placer dans dossier components/
+ TODO renommer fichher en ClientView -->
     <!-- Un élément de liste, un client -->
     <q-item clickable v-ripple>
       <!-- Photo du client -->
@@ -11,6 +12,7 @@
       <!-- Nom, prénom et email du client -->
       <q-item-section>
         <q-item-label lines="1">
+          <!-- TODO {{ client.name.first }} {{ client.name.last }} -->
           {{ client.name.first + ' ' + client.name.last }}
         </q-item-label>
         <q-item-label caption lines="2">

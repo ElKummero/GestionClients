@@ -11,6 +11,7 @@ Mutations : méthode qui manipulent les données
 Les mutations ne peuvent pas être asynchrones !!!
  */
 const mutations = {
+  // TODO renommer en majuscule et snake_case SET_CLIENTS
   setClients (state, clients) {
     state.listeClients = clients
   }
@@ -21,7 +22,11 @@ Elles peuvent être asynchrones !
  */
 const actions = {
   getClientsApi ({ commit }) {
-    api.get('https://randomuser.me/api/?results=100&nat=CH')
+    // TODO loader pour montrer à
+    //  l'utilisateur que la page est en chargement
+    //  https://quasar.dev/vue-components/skeleton
+    //  https://quasar.dev/quasar-plugins/loading
+    api.get('?results=100&nat=CH')
       .then(function (response) {
         console.log('Reussie')
         console.log(response)
@@ -45,6 +50,7 @@ Sert à calculer, trier, filtrer ou formater les donneés
 const getters = {
   // Prend le state comme 1er paramètre
   listeClients (state) {
+    // TODO trier les données par nom, prénom ASC
     return state.listeClients
   }
 }

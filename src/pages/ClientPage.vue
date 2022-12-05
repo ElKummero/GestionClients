@@ -2,6 +2,7 @@
   <q-page padding>
     <h2>Liste des clients</h2>
     <q-list>
+      <!-- TODO utiliser client-view lors de l'appel -->
       <ClientView
         v-for="client in listeClients"
         :key="client.id"
