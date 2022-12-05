@@ -1,4 +1,4 @@
-<template>
+<template> <!-- TODO Placer dans dossier components/ -->
     <!-- Un élément de liste, un client -->
     <q-item clickable v-ripple>
       <!-- Photo du client -->
